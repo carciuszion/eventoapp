@@ -24,7 +24,13 @@
 				<p>Data: <b><span th:text="${evento.data}"></span></b></p>
 				<p>Horário: <b><span th:text="${evento.horario}"></span></b></p>
 			</div>
-	</div>
+	
+	<form method="post" >
+	 	RG: <input type="text" value="" name="rg">
+	 	Nome: <input type="text" value="" name="nomeConvidado"> 
+		<button type="submit" class="waves-effect waves-light btn" action="">Adicionar Convidado</button>
+	</form>
+	</div>	
 	<!--JavaScript at end of body for optimized loading-->
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
