@@ -10,7 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DataConfiguration {
 	
-	/* MySql local
+	// MySql local
+	/*
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -31,9 +32,10 @@ public class DataConfiguration {
 		adapter.setPrepareConnection(true);
 		
 		return adapter;
-	}*/
-	
+	}
+	*/
 	// PostgreSql no Heroku
+	
 	@Bean
     public BasicDataSource dataSource() throws URISyntaxException {
         URI dbUri = new URI(System.getenv("DATABASE_URL"));
